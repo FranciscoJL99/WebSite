@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron">
+    <h1 class="display-4" align="center"><strong>¿Como funciona Poli Learning?</strong></h1>
+    <br>
+    <p class="lead" align="center"><strong>Poli Learning es una plataforma de aprendizaje que coordina eventos
+            sincronos, sobre diferentes temas, abierto a cualquier persona.</strong></p>
+    <br>
+    <p class="importante" align="center"><strong>¡Cualquier persona puede ser ponente y asistente!</strong></p>
+    <p class="lead" align="center"><strong>¿Consideras que tienes dominio en algún tema que pueda ser de interesas para
+            la comunidad? Te invitamos a que te inscribas y programes un evento a traves de nuestra Home Page</strong>
+    </p>
+    <br><br>
+    <hr class="my-4">
+    <p class="caja" align="center"><strong>Eventos disponibles</p>
+    <br><br>
+    {{ itinerario|safe }} 
+</div>
+
+{% endblock %}

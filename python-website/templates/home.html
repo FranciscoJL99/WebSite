@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron" align="center" text-align="center">
+    <div class="card border-secondary" align="center" text-align="center">
+        <div class="card-header">
+            <h1 class="display-4" align="center"><strong>¡Bienvenido a Poli Learning!</strong></h1>
+        </div>
+        <div class="card-body">
+            <p class="lead" align="center"><strong>Somos una plataforma creada por estudiantes del PJIC que está abierta
+                    a toda la comunidad de inquietos por el conocimiento.</strong></p>
+            <a class="btn btn-primary btn-lg" href="/about" role="button">Ver itinerario de ponencias</a>
+        </div>
+    </div>
+    <br>
+
+    <hr class="my-4"><br>
+
+    <div class="card border-secondary" align="center" text-align="center">
+        <p class="caja" align="center"><strong>¿Quieres ser ponente?</p>
+        <div class="card-body">
+            <p class="importante" align="center"><strong>Inscribete en el siguiente formulario: </p>
+            <br>
+            <form action="" target="" method="post" name="formDatosPersonales" align="center">
+                <label for="nombre">Nombre Completo</label>
+                <br>
+                <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" required />
+                <br><br>
+                <label for="tema">Tema de ponencia</label>
+                <br>
+                <input type="text" name="tema" id="tema" placeholder="Escribe el tema que dominas" required />
+                <br><br>
+                <label for="fecha">Fecha de ponencia (dd/mm/aaaa)</label>
+                <br>
+                <input type="date" name="fecha" id="fecha" min="2021-08-23"
+                    placeholder="Escribe la fecha en la que puedes dar la ponencia" required />
+                <br><br>
+                <label for="meet">Link de la meet de ponencia</label>
+                <br>
+                <input type="text" name="meet" id="meet"
+                    placeholder="Escribe el link de la meet en el que darás la ponencia" required />
+                <br><br>
+                <button class="btn btn-primary btn-sm">Send Form</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
